@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // ======================================
+      // Godot 4 C# Debug (Launch Godot)
+      // ======================================
+      "name": "Godot: Debug C#",
+      "type": "coreclr",
+      "request": "launch",
+
+      // Path to Godot .NET executable
+      "program": "D:/Godot/Godot.exe",
+
+      // Open the project
+      "args": [
+        "--path",
+        "${workspaceFolder}"
+      ],
+
+      "cwd": "${workspaceFolder}",
+
+      // Godot handles debugger connection automatically
+      "justMyCode": false,
+
+      // Required so VS Code doesn't instantly exit
+      "stopAtEntry": false,
+      "preLaunchTask": "Godot: Build C#"
+    }
+    // This is a workflow that code work if you then open the tscn file
+    // in visual studio code but I think just changing the scene in project settings
+    // you want to test and debug is a nicer approach
+    // {
+    //   // ======================================
+    //   // Godot 4 C# — Run Current Scene
+    //   // ======================================
+    //   "name": "Godot: Run Current Scene",
+    //   "type": "coreclr",
+    //   "request": "launch",
+    //   "program": "D:/Godot/Godot.exe",
+    //   "args": [
+    //     "--path",
+    //     "${workspaceFolder}",
+    //     "--scene",
+    //     "${file}"
+    //   ],
+    //   "cwd": "${workspaceFolder}",
+    //   "justMyCode": false,
+    //   // Required so VS Code doesn't instantly exit
+    //   "stopAtEntry": false,
+    //  "preLaunchTask": "Godot: Build C#"
+    // }
+  ]
+}
