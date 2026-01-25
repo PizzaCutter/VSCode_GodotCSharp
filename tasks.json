@@ -10,7 +10,7 @@
       "command": "dotnet",
       "args": [
         "build",
-        "${workspaceFolder}/Riminity.csproj",
+        "${workspaceFolder}/ProjectName.csproj",
         "--configuration",
         "Debug"
       ],
