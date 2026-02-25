@@ -24,6 +24,20 @@
         "clear": true
       },
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Godot: Open Editor",
+      "type": "shell",
+      "command": "D:/Godot/Godot.exe",
+      "args": [
+        "--editor",
+        "--path",
+        "${workspaceFolder}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
     }
   ]
 }
